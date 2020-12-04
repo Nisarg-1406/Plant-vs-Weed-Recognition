@@ -30,6 +30,8 @@ Same the command for converting the test folder annotations xml files to single 
 !python xml_to_csv.py -i data/Images/test -o data/annotations/test_labels.csv
 ```
 
-3) Next is genearate the train record and the test record from both of the csv files. 
+3) Next is genearate the train record and the test record from both of the csv files. Next is to storing up the train record name as train_record_name & test record name as the test_record_name. 
 
 4) Next is to defining **checkpoints**, setting the **training batch_size**, Setting **training steps** and **number of classes**
+
+5) 
