@@ -34,4 +34,17 @@ Same the command for converting the test folder annotations xml files to single 
 
 4) Next is to defining **checkpoints**, setting the **training batch_size**, Setting **training steps** and **number of classes**
 
-5) 
+5) Now to train the model considering the number of the **training steps and number of evaluation steps** into consideration. Always to keep in mind that to train it on the GPU for faster result (Even on GPU, you need to wait for few minutes!!).
+
+```
+!python /content/models/research/object_detection/model_main.py \
+    --pipeline_config_path={pipeline_fname} \
+    --model_dir={model_dir} \
+    --alsologtostderr \
+    --num_train_steps={num_steps} \
+    --num_eval_steps={num_eval_steps}
+```
+
+6) Next is to store the model in the output directory. 
+
+TO BE CONTINUE.... :)
