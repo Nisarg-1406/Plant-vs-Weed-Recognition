@@ -78,4 +78,6 @@ print('Uploaded file with ID {}'.format(uploaded.get('id')))
 Also to provide the list of the strings that is used to add correct label for each box.
 ```PATH_TO_LABELS = label_map_pbtxt_fname```
 
-9) We are going to detect - **'num_detections', 'detection_boxes', 'detection_scores','detection_classes', 'detection_masks'**
+9) We are going to detect - **'num_detections', 'detection_boxes', 'detection_scores','detection_classes', 'detection_masks'** and in the output dict, storing out the **'detection_boxes', 'detection_scores','detection_classes'**
+
+10) Also Printing out the coordinates for **bounding box** that are being created around plant and the weed. 
