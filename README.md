@@ -47,4 +47,35 @@ Same the command for converting the test folder annotations xml files to single 
 
 6) Next is to store the model in the output directory. 
 
-TO BE CONTINUE.... :)
+7) Next is to do the Google Authentication as we are using Google colab for GPU purpose. 
+
+```
+!pip install -U -q PyDrive
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from google.colab import auth
+from oauth2client.client import GoogleCredentials
+
+
+# Authenticate and create the PyDrive client.
+# This only needs to be done once in a notebook.
+auth.authenticate_user()
+gauth = GoogleAuth()
+gauth.credentials = GoogleCredentials.get_application_default()
+drive = GoogleDrive(gauth)
+
+fname = os.path.basename(pb_fname)
+# Create & upload a text file.
+uploaded = drive.CreateFile({'title': fname})
+uploaded.SetContentFile(pb_fname)
+uploaded.Upload()
+print('Uploaded file with ID {}'.format(uploaded.get('id')))
+```
+
+8) To provide the path for frozen detection graph as this is the actual model that is used for the object detection.
+```PATH_TO_CKPT = pb_fname```
+
+Also to provide the list of the strings that is used to add correct label for each box.
+```PATH_TO_LABELS = label_map_pbtxt_fname```
+
+9) We are going to detect - **'num_detections', 'detection_boxes', 'detection_scores','detection_classes', 'detection_masks'**
