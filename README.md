@@ -7,7 +7,9 @@ Object Detection Classifying Between Plant And Weed in the field. It is the Indu
 * [About Me](#about-me)
 
 ## About Project
-This project aims for the detecting the weeds and plants. The project was the industrial project where main aim was to make the weed removal bot, where the bot was required to remove the inwanted weeds from the farm in the effiecient form with minimum cost. This part is about the computer vision where it would differenciate between the weed and the plant and give the coordinates where the weed is present. The Photos for the field was taken by the Rasberry Pi 4B+ camera and it is not taken from the internet for the processing purpose. After detecting the arm of the robot will remove the weed present in the field. 
+This project aims for the detecting the weeds and plants. The project was the industrial project where main aim was to make the weed removal bot, where the bot was required to remove the unwanted weeds from the farm in the effiecient form with minimum cost. This part is about the computer vision where it would differenciate between the weed and the plant and give the coordinates where the weed is present. The Photos for the field was taken by the Rasberry Pi 4B+ camera and it is not taken from the internet for the processing purpose. After detecting the arm of the robot will remove the weed present in the field. 
+
+**Important Note - Here flower is considered as the plant and leaves are considered as the weed for the trial and testing for working purpose of the project on non agricultural field. Otherwise code and purpose of the project is absolutely correct.**  
 
 ## Detailed Explanation about Project
 I would be providing the detailed explanation of each and every line of code. 
@@ -228,3 +230,18 @@ This Project focuses on Classifying between Multiple Plants and Weeds Using Sing
     plt.figure(figsize=IMAGE_SIZE)
     plt.imshow(image_np)
     ```
+
+Output Images - 
+
+  <img src = "Images/Output_Image1.png" width = "700">
+  <img src = "Images/Output_Image2.png" width = "700">
+  <img src = "Images/Output_Image3.png" width = "700">
+
+## About Me
+**IF YOU LIKED MY WORK, PLEASE HIT THE STAR BUTTON, AND IF POSSIBLE DO PLEASE SHARE, SO THAT COMMUNITY CAN GET BENIFIT OUT OF IT BEACUSE I AM EXLPANING EACH AND EVERY LINE OF CODE FOR EACH AND EVERY PROJECT OF MINE.**
+
+Also I am Solving **Algorithms and Data Structure Problems from more than 220 Days Without any off-Day and have solved more than 405 Questions on various topics and posting my solutions on Github Daily**. You can Visit my Profile of LeetCode here - **https://leetcode.com/Nisarg1406/**
+
+I am good at Algorithms and Data structure and I have good Projects in Machine learning and Deep Learning (Computer Vision). **I am and would be posting the detialed explantion of each and every project working**. I am activily looking for an Internhip in **Software development enginering (SDE) Domain and Machine learning Domain**.
+
+You can contact me on my mail ID - nisarg.mehta18@vit.edu OR nisargmehta2000@gmail.com and even Contact me on LinkedIn - https://www.linkedin.com/in/nisarg-mehta-4a378a185/
