@@ -1,0 +1,7 @@
+This folder contains the 5 input images and 4 output images. All the images are taken on the field for the industrial project and are not taken from the internet
+for the processing purpose. 
+
+Important Note - Here flower is considered as the plant and leaves are considered as the weed for the trial and testing working purpose of the project
+on non agricultural field. Otherwise code and purpose of the project is correct. 
+
+This folder also contains the image of coordinate of the plant and weed, where it is located on the field. 
